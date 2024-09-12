@@ -7,16 +7,16 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+	
 	<header>
-
+			<img class="toms" src="img/toms-burans.jpg">
 		<div>
 
-		Hello! I'm Toms Burāns. I like to build effective <a href="#s01">websites</a> for animal rights campaigns and tell <a href="#s02">visual stories</a> that inspire action and raise awareness.
+		Hello! I'm <span>Toms Burāns</span>. I like to build effective <a href="#s01">websites</a> for animal rights campaigns and tell <a href="#s02">visual stories</a> that inspire action and raise awareness.
 
 		<p>I also do other <a href="#s03">things</a>.</p>
 
-	</div>
+		</div>
 
 	</header>
 		
@@ -150,6 +150,18 @@
 		<a href="mailto:hello@tomsburans.com"> hello@tomsburans.com </a>
 	</footer>
 	
-	
+	<script>
+		let btn = document.querySelector('header span');
+		console.log(btn);
+		let img = document.querySelector('.toms');
+		console.log(img);
+		btn.addEventListener('click', () => {
+			console.log('click')
+			img.style.display = 'block';
+			setTimeout(() => {
+				img.style.display = 'none';
+			}, 1500);
+		});
+	</script>
 </body>
 </html>
